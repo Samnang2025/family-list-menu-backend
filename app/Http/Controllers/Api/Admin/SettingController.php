@@ -26,6 +26,7 @@ class SettingController extends Controller
             'secondary_color' => $settings->secondary_color,
             'background_color' => $settings->background_color,
             'default_language' => $settings->default_language,
+            'product_columns' => (int) $settings->product_columns,
         ]);
     }
 
@@ -41,6 +42,7 @@ class SettingController extends Controller
             'secondary_color' => ['sometimes', 'required', 'string', 'max:20'],
             'background_color' => ['sometimes', 'required', 'string', 'max:20'],
             'default_language' => ['sometimes', 'required', 'string', 'max:20'],
+            'product_columns' => ['sometimes', 'required', 'integer', 'min:2', 'max:6'],
             'logo' => ['nullable', 'image', 'max:5120'],
             'remove_logo' => ['sometimes', 'boolean'],
         ]);
@@ -73,6 +75,7 @@ class SettingController extends Controller
             'secondary_color' => $settings->secondary_color,
             'background_color' => $settings->background_color,
             'default_language' => $settings->default_language,
+            'product_columns' => (int) $settings->product_columns,
         ]);
     }
 }

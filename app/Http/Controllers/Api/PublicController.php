@@ -26,6 +26,7 @@ class PublicController extends Controller
             'secondary_color' => $settings->secondary_color,
             'background_color' => $settings->background_color,
             'default_language' => $settings->default_language,
+            'product_columns' => (int) $settings->product_columns,
         ]);
     }
 

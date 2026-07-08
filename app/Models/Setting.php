@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
     'secondary_color',
     'background_color',
     'default_language',
+    'product_columns',
 ])]
 class Setting extends Model
 {
@@ -27,6 +28,7 @@ class Setting extends Model
             'secondary_color' => '#15803d',
             'background_color' => '#ffffff',
             'default_language' => 'khmer',
+            'product_columns' => 3,
         ]);
     }
 }
